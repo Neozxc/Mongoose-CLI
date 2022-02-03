@@ -9,6 +9,8 @@ exports.addMovie = async (newFilm) => {
     } catch (error) {
         console.log(error);
     }
+    
+    mongoose.connection.close();
 };
 
 exports.list = async () => {
@@ -17,4 +19,6 @@ exports.list = async () => {
     } catch (error) {
         console.log(error);
     }
+
+    mongoose.connection.close();
 };

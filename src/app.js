@@ -13,9 +13,6 @@ const app = async () => {
     } else {
         console.log("Wrong command");
     }
-
-    // Laziest way to close connection
-    mongoose.connection.close();
 };
 
 app();
